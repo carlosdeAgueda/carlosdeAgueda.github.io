@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tutoriales</h1>
+  </header>
+
+  <ul type="none">
+    <li><a href="../index.html">Portada</a></li>
+    <li><a href="../nacional/index.html">Noticia Nacional</a></li>
+    <li><a href="../ocio/index.html">Ocio</a></li>
+    <li><a href="../moviles/index.html">Móviles</a></li>
+    <li><a href="../compra/index.html">Guia de Compra</a></li>
+    <li><a href="../internacional/index.html">Noticia Internacional</a></li>
+    <li><a href="../lo_ultimo/index.html"> Lo último</a></li>
+  </ul>
+  <div class="marcador">
+    <marquee behavior="scroll" direction="left"><a class="marca" href="./4ºNoticias.html">Artículo de última hora: ¡De la Idea a la Web en Pocos Pasos!</a></marquee>
+  </div>
+  <div class="contenido">
+    <div class="global">
+      <div id="principio">
+        <h1 id="Intro" id="ArtHigh">Cómo insertar JavaScript en un código HTML</h1>
+        <div>
+            <p>
+              Si quieres mostrar contenido estático como, por ejemplo, un conjunto de imágenes, entonces HTML puede hacer el trabajo por ti. Sin embargo, las páginas estáticas se están convirtiendo en cosa del pasado.
+              La mayor parte del contenido actual es interactivo e incluye vistosas presentaciones de diapositivas, formularios y menús. Estos elementos mejoran la experiencia del usuario y añaden dinamismo al sitio web.
+              Para ello se utilizan lenguajes de scripting y JavaScript es uno de los más famosos en este sentido. Con él, los desarrolladores pueden crear sitios web que interactúan con el usuario y viceversa. Aunque hay muchos otros lenguajes disponibles, ninguno es tan popular como JavaScript. Para aprovecharlo al máximo, se utiliza junto con HTML.
+              En este tutorial, te mostraremos varias formas de añadir JavaScript a HTML.
+            </p>
+            <div class="indice">
+              <h2>Tabla de contenidos</h2>
+                <a class="ListaIndice" href="#Intro">Cómo insertar JavaScript en HTML</a><br>
+                <a class="ListaIndice2" href="#Parte1">Agregar JavaScript directamente a un HTML</a><br>
+                <a class="ListaIndice2" href="#Parte2">Agregar código JavaScript a un archivo separado</a><br>
+                <a class="ListaIndice" href="#Parte3">Ejemplo de JavaScript para validar una dirección de correo electrónico</a><br>
+            </div>
+            <p>
+              Hay dos formas de insertar JavaScript en HTML y hacer que funcionen juntos. Echemos un vistazo a algunas de las formas en que podemos conectar JavaScript con HTML.
+            </p>
+            <h2 id="Parte1" class="h2titulo">Agregar JavaScript directamente a un archivo HTML</h2>
+              <p>
+              La primera forma de insertar JavaScript en HTML es directa. Puedes hacerlo utilizando la etiqueta <span class="spanbold">"script"</span> que debe envolver todo el código JavaScript que escribas. Se puede agregar el código JavaScript:
+              </p>
+              <ul class="Lista">
+                <li class="Lista">Entre etiquetas <span>"head"</span></li><br>
+                <li class="Lista">Entre etiquetas <span>"Body"</span></li><br>
+              </ul>
+              <p>
+                Dependiendo de dónde agregues el código JavaScript en tu archivo HTML, la carga será diferente. Por lo general se recomienda agregarlo en la sección <span class="spanbold">"Head"</span> para que permanezca separado del contenido de tu archivo HTML. Pero colocarlo dentro de <span class="spanbold">"Body"</span> puede ayudar a mejorar la velocidad de carga, ya que el contenido del sitio web se cargará más rápido, y solo después de eso se procesará el JavaScript.
+              </p>
+              <p>
+                Para este ejemplo, echemos un vistazo al siguiente archivo HTML que debe mostrar la hora actual:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura7.PNG" alt="Foto JavaScript1">
+              <p>
+                En este momento, el código anterior no contiene JavaScript y, por lo tanto, no puede mostrar la hora. Podemos agregar el siguiente código para asegurarnos de que muestre la hora correcta:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura8.PNG" alt="Foto JavaScript2">
+              <p>
+                Envolveremos este código entre <span class="spanbold">script y script</span> y lo colocaremos en la cabecera (head) del código HTML para garantizar que cada vez que se cargue la página, se genere una alerta que muestre la hora actual al usuario. Así es como se verá el archivo HTML después de agregar el código:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura9.PNG" alt="Foto JavaScript3">
+              <p>
+                Si quieres mostrar la hora dentro del cuerpo (body) de la página, deberás incluir la script dentro de las etiquetas <span class="spanbold">"Body"</span> de la página HTML. Así es como se verá el código cuando lo hagas:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura10.PNG" alt="Foto JavaScript4">
+              <p>Así es como se vería el resultado final:</p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura11.PNG" alt="Foto JavaScript5">
+            <h2 id="Parte2" class="h2titulo">Agregar código JavaScript a un archivo separado</h2>
+              <p>
+                A veces, insertar JavaScript en HTML directamente no parece ser la mejor opción. Sobre todo porque algunos scripts de JS deben utilizarse en varias páginas, por lo tanto, es mejor mantener el código JavaScript en archivos separados. Es por esto que la forma más aceptable de incluir JavaScript en HTML es importando archivos externos.
+              </p>
+              <p>
+                Se puede hacer referencia a estos archivos desde adentro de los documentos HTML, al igual que hacemos referencia a los documentos CSS. Algunos de los beneficios de agregar código JavaScript en archivos separados son:
+              </p>
+              <ul class="Lista">
+                <li class="Lista">Cuando los códigos HTML y JavaScript están separados, se cumple el principio de diseño de separación y hace que todo sea mucho más sostenible y reutilizable.</li>
+                <li class="Lista">La legibilidad y el mantenimiento del código es mucho más fácil.</li>
+                <li class="Lista">Los archivos JavaScript en caché mejoran el rendimiento general del sitio web al disminuir el tiempo que tardan las páginas en cargarse</li>
+              </ul>
+              <p>
+                Podemos hacer referencia al archivo JavaScript desde HTML así:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura12.PNG" alt="Foto JavaScript6">
+              <p>
+                El contenido del archivo myscript.js será:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura13.PNG" alt="Foto JavaScript7">
+            <h2 id="Parte3" class="h2titulo">Ejemplo de JavaScript para validar una dirección de correo electrónico</h2>
+              <p>
+                JavaScript potencia tu aplicación al ayudarte a validar los datos ingresados por el usuario en el lado del cliente. Uno de los datos del usuario más importantes que a menudo necesitan validación son las direcciones de correo electrónico. Esta función de JavaScript puede ayudarte a validar la dirección de correo electrónico ingresada antes de enviarla al servidor:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura14.PNG" alt="Foto JavaScript8">
+              <p>
+                Para adjuntar esta función a una entrada de formulario, puedes usar el siguiente código:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura15.PNG" alt="Foto JavaScipt9">
+              <p>
+                Este es el resultado que obtendrías después de combinar todos los ingredientes en un archivo HTML:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura16.PNG" alt="Foto JavaScript10">
+              <p>
+                Y si la validación es incorrecta, el resultado será diferente:
+              </p>
+              <img class="imagen5" src="../img/notias/3ºNoticias/Captura17.PNG" alt="Foto JavaScript11">
+              <p>
+                ¡Felicitaciones! Has aprendido a insertar JavaScript en HTML con algunos ejemplos básicos.
+              </p>
+        </div>
+        <!-- ruta-->
+       <div class="botondiv">
+        <a id="botontext" href="../index.html" target="_self">Regresar a la página principal</a>
+      </div>
+      <div class="botondiv1">
+        <a id="botontext" href="../index.html" target="_self">Regresar al principio de la página</a>
+      </div>
+      </div>
+      <div>
+        <table id="Footer">
+          <tr>
+            <td class="thfooter"><span class="spanbold">Realizado por:</span></td>
+            <td class="thfooter"><span class="spanbold">Siguenos en las redes sociales:</span></td>
+          </tr>
+          <tr>
+            <td class="thfooter">Begoña Calvo, Daniel Artigues y Carlos Agueda</td>
+            <td class="thfooter">
+              <a href="https://es-es.facebook.com/" target="_blank"><img class="IconsFF" src="../img/index/icons8-facebook-90.png" alt="Facebook Icono"></a>
+              <a href="https://twitter.com/" target="_blank"><img class="IconsFooter" src="../img/index/icons8-twitter-90.png" alt="Icono Twitter"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img class="IconsFooter" src="../img/index/icons8-instagram-90.png" alt="Icono Instgram"></a>
+              <a href="mailto:Info@Tutoriales.com"><img class="IconsFooter" src="../img/index/icons8-mail-90.png" alt="Icono Mail"></a>
+            </td>
+          </tr>
+        </table>
+      </table>
+    </div>
+    </div>
+  </div>
+  </body>
+  </html>
